@@ -7,13 +7,24 @@ using System.Collections.Generic;
 
 // @lc code=start
 public partial class Solution {
-    //test
     public void Rotate(int[][] matrix) {
-        if (matrix.Length==1){
-            return;
+        var tem=0;
+        var times=matrix.Length/2;
+        var ti=matrix.Length-1;
+        var tj=matrix.Length-1;
+        for(var i=0;i<times;++i){
+            for(var j=i;j<matrix.Length-1-i;++j){
+               tem=matrix[i][j];
+               matrix[i][j]=matrix[tj][i];
+               matrix[tj][i]=matrix[ti][tj];
+               matrix[ti][tj]=matrix[j][ti];
+               matrix[j][ti]=tem;
+               --tj;
+            }
+            --ti;
+            tj=ti;
+
         }
-        var tem=new int[matrix.Length];
-        var times=matrix.Length%2;
         
     }
 }
