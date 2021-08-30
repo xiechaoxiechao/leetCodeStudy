@@ -1,13 +1,11 @@
 using System;
-using LeetcodeStudy.Solutions.LocationAttrbutes;
+
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+
 
 namespace LeetcodeStudy.Solutions
 {
-    [Location("https://leetcode-cn.com/problems/permutations-ii/")]
-    [Description("给定一个可包含重复数字的序列 nums ，按任意顺序 返回所有不重复的全排列。")]
+    
     class Solution47
     {
         private List<IList<int>> _res;
