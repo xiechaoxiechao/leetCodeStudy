@@ -30,11 +30,11 @@ func minDistance(word1 string, word2 string) int {
 	}
 	var i int
 	for i = 1; i < len(word1); i++ {
-
+		dp[i] = append(dp[i], make([]int, len(word2))...)
 		if word1[i] == word2[0] {
-			dp[i] = append(dp[i], i)
+			dp[i][0] = i
 		} else {
-			dp[i] = append(dp[i], dp[i-1][0]+1)
+			dp[i][0] = dp[i-1][0] + 1
 		}
 
 	}
@@ -48,9 +48,9 @@ func minDistance(word1 string, word2 string) int {
 	for i = 1; i < len(word1); i++ {
 		for j := 1; j < len(word2); j++ {
 			if word1[i] == word2[j] {
-				dp[i] = append(dp[i], dp[i-1][j-1])
+				dp[i][j] = dp[i-1][j-1]
 			} else {
-				dp[i] = append(dp[i], minAB(dp[i][j-1], minAB(dp[i-1][j-1], dp[i-1][j]))+1)
+				dp[i][j] = minAB(dp[i][j-1], minAB(dp[i-1][j-1], dp[i-1][j])) + 1
 			}
 		}
 	}
