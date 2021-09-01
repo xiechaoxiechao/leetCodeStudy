@@ -31,6 +31,7 @@ namespace LeetcodeStudy.Study
             var c = new int[] { 2, 1, 3 };
            test(c);
            Console.WriteLine(c[0]);
+          
 
 
 
