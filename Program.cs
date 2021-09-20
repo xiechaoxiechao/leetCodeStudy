@@ -1,10 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using LeetcodeStudy.Study;
-using LeetcodeStudy.Solutions;
+﻿using System;
 
 namespace LeetcodeStudy
 {
@@ -12,17 +6,17 @@ namespace LeetcodeStudy
     {
         static void Main(string[] args)
         {
-            var solution = new Solution47();
+            // var solution = new Solution47();
             // var s = new Study.Study();
             // s.Run();
-            var a=new string[]{"Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"};
-            // var b=new int[2]{2,5};
+            // var a=new string[]{"Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"};
+            // var b=new int[]{2,0,2,1,1,0};
             // a[0]=new int[]{1,3,1};
             // a[1]=new int[]{1,5,1};
             // a[2]=new int[]{4,2,1};
             // a[3]=new int[]{15,18};
             // a[4]=new int[]{21,22,23,24,25};
-            var c=new Solution();
+            // var c=new Solution();
             // ListNode last=null;
             // ListNode tem=null;
             // for(int i=3;i!=0;i--){
@@ -34,8 +28,10 @@ namespace LeetcodeStudy
             // for(var i=tes;i!=null;i=i.next){
             //     Console.WriteLine(i.val);
             // }
-            Console.WriteLine(c.SimplifyPath("/a/./b/../../c/"));
+            // Console.WriteLine(c.SimplifyPath("/a/./b/../../c/"));
             // Console.WriteLine(6.ToString());
+            // c.SortColors(b);
+            Console.WriteLine("hello world");
             
             
             
