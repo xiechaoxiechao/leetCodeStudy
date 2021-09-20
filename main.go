@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"leet-code-study/Solutions"
 )
 
 func main() {
@@ -11,8 +10,8 @@ func main() {
 	// runtime.GC()
 	//a := 0b111101
 	//fmt.Println(a & (0b000001))
-	a:=[][]byte{{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}}
-	fmt.Println(Solutions.Exist(a,"ABCCED"))
+	// a := [][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}
+	// fmt.Println(Solutions.Exist(a,"ABCCED"))
 	// Solutions.trap(a)
 }
 
