@@ -13,9 +13,6 @@ namespace LeetcodeStudy.Study
             Eventing += ana;
             Eventing += ana1;
         }
-        /*
-         * test
-         */
         public void Run()
         {
             OnEvent();
@@ -27,19 +24,11 @@ namespace LeetcodeStudy.Study
             {
                 Console.Write(i);
             }
-
-            var c = new int[] { 2, 1, 3 };
-           test(c);
-           Console.WriteLine(c[0]);
-          
+            Action<int> te=delegate(int i){
+               Console.WriteLine(i);
+           };
 
 
-
-
-
-        }
-        public void test(int[] i){
-            i[0]=10;
         }
 
         public virtual void OnEvent()
@@ -59,5 +48,24 @@ namespace LeetcodeStudy.Study
         {
             Console.WriteLine("ana1");
         }
+    }
+
+    public class Base
+    {
+
+        public virtual void Test()
+        {
+            Console.WriteLine("this is base");
+        }
+
+    }
+
+    public class Child : Base
+    {
+         public override void Test()
+        {
+            Console.WriteLine("this is child");
+        }
+
     }
 }
