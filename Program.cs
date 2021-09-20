@@ -34,28 +34,11 @@ namespace LeetcodeStudy
             // }
             // Console.WriteLine(c.SimplifyPath("/a/./b/../../c/"));
             // Console.WriteLine(6.ToString());
-<<<<<<< HEAD
             // c.SortColors(b);
             Console.WriteLine("hello world");
             
             
             
-=======
-            // Child ch = new Child();
-            // Base b = ch;
-            // ch.Test();
-            // b.Test();
-            // var t = new Thread(delegate() {
-            //     Console.WriteLine("hello world");
-            // });
-            // t.Start(123);
-            c.RemoveDuplicates(a);
-
-
-
-
-
->>>>>>> origin/master
         }
 
     }
