@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Threading;
 
@@ -10,6 +10,7 @@ namespace LeetcodeStudy
     {
         static void Main(string[] args)
         {
+
             // var s = new Study.Study();
             // s.Run();
             var a=new int[]{1,1,1,2,2,2,3,3};
@@ -19,7 +20,7 @@ namespace LeetcodeStudy
             // a[2]=new int[]{4,2,1};
             // a[3]=new int[]{15,18};
             // a[4]=new int[]{21,22,23,24,25};
-            var c=new Solution();
+            // var c=new Solution();
             // ListNode last=null;
             // ListNode tem=null;
             // for(int i=3;i!=0;i--){
@@ -33,6 +34,13 @@ namespace LeetcodeStudy
             // }
             // Console.WriteLine(c.SimplifyPath("/a/./b/../../c/"));
             // Console.WriteLine(6.ToString());
+<<<<<<< HEAD
+            // c.SortColors(b);
+            Console.WriteLine("hello world");
+            
+            
+            
+=======
             // Child ch = new Child();
             // Base b = ch;
             // ch.Test();
@@ -47,6 +55,7 @@ namespace LeetcodeStudy
 
 
 
+>>>>>>> origin/master
         }
 
     }
