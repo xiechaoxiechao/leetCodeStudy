@@ -34,13 +34,6 @@ namespace LeetcodeStudy
             // }
             // Console.WriteLine(c.SimplifyPath("/a/./b/../../c/"));
             // Console.WriteLine(6.ToString());
-<<<<<<< HEAD
-            // c.SortColors(b);
-            Console.WriteLine("hello world");
-            
-            
-            
-=======
             // Child ch = new Child();
             // Base b = ch;
             // ch.Test();
@@ -55,7 +48,6 @@ namespace LeetcodeStudy
 
 
 
->>>>>>> origin/master
         }
 
     }
