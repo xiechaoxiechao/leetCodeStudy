@@ -21,3 +21,9 @@ func BenchmarkExist(b *testing.B) {
 	a := [][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}
 	fmt.Println(exist(a, "ABCCED"))
 }
+
+func TestSearch(t *testing.T) {
+	a := []int{1, 3}
+	t.Log(search1(a, 0))
+
+}
