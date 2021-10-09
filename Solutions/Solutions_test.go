@@ -24,3 +24,8 @@ func BenchmarkSearchMartix(b *testing.B) {
 func BenchmarkMainWindow(b *testing.B) {
 	fmt.Println(minWindow("a", "aa"))
 }
+
+func BenchmarkLargestRectangleArea(b *testing.B) {
+	a := []int{2, 1, 5, 6, 2, 3}
+	largestRectangleArea(a)
+}
