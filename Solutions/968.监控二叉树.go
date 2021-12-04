@@ -15,8 +15,8 @@ package Solutions
  *     Right *TreeNode
  * }
  */
-func minCameraCover(root *TreeNode) int {
+// func minCameraCover(root *TreeNode) int {
 
-}
+// }
 
 // @lc code=end
