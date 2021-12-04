@@ -8,43 +8,29 @@ package Solutions
 
 // @lc code=start
 func largestRectangleArea(heights []int) int {
-	if len(heights) == 1 {
-		return heights[0]
-	}
-	s1 := make([]int, len(heights))
-	s2 := make([]int, len(heights))
-	s1[0] = 0
+	sTop := 0
+	stack := make([]int, len(heights)+1)
+	stack[0] = -1
 	res := 0
-	j := 0
-	for i := 1; i < len(heights); i++ {
-		if heights[i] < heights[i-1] {
-			for j = s1[i-1] - 1; j >= 0 && heights[j] >= heights[i]; j-- {
+	tem := 0
+	for i := 0; i < len(heights); i++ {
+		for sTop != 0 && heights[stack[sTop]] > heights[i] {
+			tem = heights[stack[sTop]] * (i - stack[sTop-1] - 1)
+			if tem > res {
+				res = tem
 			}
-			s1[i] = j + 1
-		} else if heights[i] == heights[i-1] {
-			s1[i] = s1[i-1]
-		} else {
-			s1[i] = i
+			sTop--
 		}
+		sTop++
+		stack[sTop] = i
+
 	}
-	s2[len(heights)-1] = len(heights) - 1
-	for i := len(heights) - 2; i > -1; i-- {
-		if heights[i] < heights[i+1] {
-			for j = s2[i+1] + 1; j < len(heights) && heights[j] >= heights[i]; j++ {
-			}
-			s2[i] = j - 1
-		} else if heights[i] == heights[i+1] {
-			s2[i] = s2[i+1]
-		} else {
-			s2[i] = i
-		}
-	}
-	var tem = 0
-	for i, v := range s1 {
-		tem = (s2[i] - v + 1) * heights[i]
-		if res < tem {
+	for i := 1; i <= sTop; i++ {
+		tem = heights[stack[i]] * (stack[sTop] - stack[i-1])
+		if tem > res {
 			res = tem
 		}
+
 	}
 	return res
 }
