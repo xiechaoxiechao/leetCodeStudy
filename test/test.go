@@ -1,13 +1,26 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	a := make(chan int, 2)
-	a <- 3
-	close(a)
-	for b := range a {
-		fmt.Println(b)
+
+	var c=make(chan int)
+	go func() {
+		for{
+			select {
+			case <-c:
+				fmt.Println("get")
+			}
+		}
+
+	}()
+	for i:=1;i<10;i++{
+		c<-0
+		time.Sleep(2*time.Second)
 	}
+	time.Sleep(time.Minute)
 
 }

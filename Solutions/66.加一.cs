@@ -6,7 +6,7 @@ using System;
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public int[] PlusOne(int[] digits) {
         Action<int> ana=null;
         ana=(index)=>{

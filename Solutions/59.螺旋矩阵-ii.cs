@@ -6,7 +6,7 @@ using System.Threading.Tasks;
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public int[][] GenerateMatrix(int n) {
         var res=new int[n][];
         for(int i=0;i<n;i++){

@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public int LengthOfLastWord(string s) {
         var index=s.LastIndexOf(' ');
         if(index==s.Length-1){

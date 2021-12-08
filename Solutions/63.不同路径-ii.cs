@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public int UniquePathsWithObstacles(int[][] obstacleGrid) {
         var step=new int[obstacleGrid.Length,obstacleGrid[0].Length];
         

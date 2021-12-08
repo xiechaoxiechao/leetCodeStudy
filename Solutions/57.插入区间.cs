@@ -7,7 +7,7 @@ using System.Collections.Generic;
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public int[][] Insert(int[][] intervals, int[] newInterval) {
         var res=new  List<int[]>();
         var end=-1;

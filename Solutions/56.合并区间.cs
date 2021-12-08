@@ -7,7 +7,7 @@ using System.Collections.Generic;
  */
 
 // @lc code=start
-public partial class Solution
+public partial class Solutions
 {
     public int[][] Merge(int[][] intervals)
     {

@@ -6,7 +6,7 @@ using System;
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public int MinPathSum(int[][] grid) {
         var stepSum=new int[grid.Length,grid[0].Length];
         stepSum[0,0]=grid[0][0];

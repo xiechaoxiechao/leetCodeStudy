@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public int MySqrt(int x) {
         double c=x;
         while(c*c-x>=1){

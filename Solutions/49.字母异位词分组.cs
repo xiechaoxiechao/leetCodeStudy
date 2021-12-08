@@ -7,7 +7,7 @@ using System;
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public IList<IList<string>> GroupAnagrams(string[] strs) {
             var di=new Dictionary<string,List<string>>();
             char[] tem;
@@ -23,9 +23,9 @@ public partial class Solution {
                     di.Add(k,new List<string>{i});
                 }
             }
-           foreach(var key in di.Keys){
+            foreach(var key in di.Keys){
                res.Add(di[key]);
-           }
+            }
             return res;
 
     }

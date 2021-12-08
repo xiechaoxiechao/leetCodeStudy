@@ -7,7 +7,7 @@ using System.Collections.Generic;
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public int TotalNQueens(int n) {
         var status = new int[2*n];
         var length=0;

@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-public partial  class Solution {
+public partial  class Solutions {
     public int ClimbStairs(int n) {
         if (n==1){
             return 1;

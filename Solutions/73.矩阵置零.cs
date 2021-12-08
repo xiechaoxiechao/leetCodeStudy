@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public void SetZeroes(int[][] matrix) {
         var cl=false;
         for(int i=0;i<matrix.Length;++i){

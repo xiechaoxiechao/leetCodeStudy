@@ -28,7 +28,7 @@ public class ListNode
         this.next = next;
     }
 }
-public partial class Solution
+public partial class Solutions
 {
     public ListNode RotateRight(ListNode head, int k)
     {

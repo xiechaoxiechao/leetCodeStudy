@@ -6,7 +6,7 @@
 
 // @lc code=start
 using System.Collections.Generic;
-public partial class Solution {
+public partial class Solutions {
     public IList<int> GrayCode(int n) {
         var res =new int[1<<n];
         res[0]=0;

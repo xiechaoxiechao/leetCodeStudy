@@ -6,7 +6,7 @@
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public void SortColors(int[] nums) {
         var left=0;
         var right=nums.Length-1;

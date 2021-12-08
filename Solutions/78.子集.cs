@@ -7,7 +7,7 @@ using System;
 
 // @lc code=start
 using System.Collections.Generic;
-public partial class Solution {
+public partial class Solutions {
     public IList<IList<int>> Subsets(int[] nums) {
         var times=1<<nums.Length;
         var res=new List<IList<int>>();

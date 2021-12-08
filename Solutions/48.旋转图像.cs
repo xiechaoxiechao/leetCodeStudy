@@ -6,7 +6,7 @@ using System.Collections.Generic;
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public void Rotate(int[][] matrix) {
         var tem=0;
         var times=matrix.Length/2;

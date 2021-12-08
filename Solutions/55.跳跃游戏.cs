@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public bool CanJump(int[] nums) {
         int max;
         int tem;

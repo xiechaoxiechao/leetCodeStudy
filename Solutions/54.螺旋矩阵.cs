@@ -8,7 +8,7 @@ using System.Collections.Generic;
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public IList<int> SpiralOrder(int[][] matrix) {
         var res=new int[matrix.Length*matrix[0].Length];
         var length=new int[(matrix.Length<matrix[0].Length?matrix.Length:matrix[0].Length)/2+1];

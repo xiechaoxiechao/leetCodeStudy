@@ -7,7 +7,7 @@ using System.Threading.Tasks;
  */
 
 // @lc code=start
-public partial class Solution {
+public partial class Solutions {
     public int UniquePaths(int m, int n) {
         long x=1;
         long y=1;
