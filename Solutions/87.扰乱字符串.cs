@@ -9,7 +9,7 @@ using System.Collections.Generic;
 // @lc code=start
 public partial class Solutions
 {
-    private Dictionary<(int, int, int), bool> map = new Dictionary<(int, int, int), bool>();
+    private readonly Dictionary<(int, int, int), bool> _map = new Dictionary<(int, int, int), bool>();
 
     public bool IsScramble(string s1, string s2)
     {
@@ -24,9 +24,9 @@ public partial class Solutions
     private bool C(int begin1, int begin2, int len, string s1, string s2)
     {
         var t = (begin1, begin2, len);
-        if (map.ContainsKey(t))
+        if (_map.ContainsKey(t))
         {
-            return map[t];
+            return _map[t];
         }
         var end2 = begin2 + len;
         if (len == 0)
@@ -35,7 +35,7 @@ public partial class Solutions
         }
 
         var n1 = new byte[26];
-        for (int i = 0; i < len; i++)
+        for (var i = 0; i < len; i++)
         {
             n1[s1[begin1 + i] - 'a'] += 1;
             n1[s2[begin2 + i] - 'a'] -= 1;
@@ -45,7 +45,7 @@ public partial class Solutions
         {
             if (i != 0)
             {
-                map.Add(t, false);
+                _map.Add(t, false);
                 return false;
             }
         }
@@ -55,18 +55,18 @@ public partial class Solutions
         {
             if (C(begin1, end2 - i, i, s1, s2) && C(begin1 + i + 1, begin2, len - i - 1, s1, s2))
             {
-                map.Add(t, true);
+                _map.Add(t, true);
                 return true;
             }
 
             if (C(begin1, begin2, i, s1, s2) && C(begin1 + i + 1, begin2 + i + 1, len - i - 1, s1, s2))
             {
-                map.Add(t, true);
+                _map.Add(t, true);
                 return true;
             }
         }
 
-        map.Add(t, false);
+        _map.Add(t, false);
         return false;
     }
 }
