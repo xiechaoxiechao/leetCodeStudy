@@ -7,7 +7,7 @@
 // @lc code=start
 package Solutions
 
-type TreeNode struct {
+type TreeNode1 struct {
 	Val   int
 	Left  *TreeNode
 	Right *TreeNode
