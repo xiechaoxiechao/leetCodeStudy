@@ -19,7 +19,7 @@ type AllOne struct {
 	mp   map[string]*_node
 }
 
-func Constructor() AllOne {
+func Constructor_() AllOne {
 	var tem = new(_node)
 	return AllOne{tem, tem, make(map[string]*_node)}
 }
