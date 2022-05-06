@@ -15,6 +15,8 @@
  */
 package Solutions
 
+import "C"
+
 func findTarget(root *TreeNode, k int) bool {
 	var mp = make(map[int]struct{})
 	var bfs func(nod *TreeNode) bool
