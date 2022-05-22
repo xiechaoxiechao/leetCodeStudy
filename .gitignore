@@ -1,9 +1,10 @@
-bin/**
-obj/**
+cSharp/bin/**
+cSharp/obj/**
 .vscode/**
 .idea/**
 main.go
 Study/**
 Program.cs
-Solutions/Solutions_test.go
-build/**
+go/Solutions/Solutions_test.go
+c/build/**
+cSharp/.idea/**

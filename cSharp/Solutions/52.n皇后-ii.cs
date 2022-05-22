@@ -13,7 +13,7 @@ public partial class Solutions {
         var length=0;
         var result =0;
         var temRes =0;
-        Action add = null;
+        Action add = ()=>{};
         var sw = false;
         add = (() =>
         {
