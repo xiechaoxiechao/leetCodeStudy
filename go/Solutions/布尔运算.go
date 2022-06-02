@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode.cn id=1106 lang=golang
+ * @lc app=leetcode.cn id= lang=golang
  *
- * [1106] 解析布尔表达式
+ *
  */
 
 // @lc code=start
