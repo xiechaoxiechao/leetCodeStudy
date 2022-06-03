@@ -11,7 +11,7 @@ type Bank struct {
 	balance []int64
 }
 
-func Constructor(balance []int64) Bank {
+func _Constructor(balance []int64) Bank {
 	return Bank{balance: balance}
 }
 
