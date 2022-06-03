@@ -22,7 +22,7 @@ public class ListNode
 {
     public int val;
     public ListNode next;
-    public ListNode(int val = 0, ListNode next = null)
+    public ListNode(int val = 0, ListNode next=null)
     {
         this.val = val;
         this.next = next;
@@ -32,7 +32,7 @@ public partial class Solutions
 {
     public ListNode RotateRight(ListNode head, int k)
     {
-        if(head==null){
+        if(head is not null){
             return head;
         }
         var tem = new Queue<ListNode>();

@@ -17,7 +17,7 @@ public partial class Solutions
         var temRes = new Stack<string>();
         char[] cp1;
         List<string> cp2;
-        Action add = null;
+        Action add = ()=>{};
         var sw = false;
         add = (() =>
         {

@@ -8,7 +8,7 @@ using System;
 // @lc code=start
 public partial class Solutions {
     public int[] PlusOne(int[] digits) {
-        Action<int> ana=null;
+        Action<int> ana=(a)=>{};
         ana=(index)=>{
             if(digits[index]==9){
                 digits[index]=0;

@@ -7,6 +7,7 @@
 // @lc code=start
 package Solutions
 
+import "C"
 import "strings"
 
 func calculate(s string) int {
