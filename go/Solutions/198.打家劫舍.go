@@ -21,12 +21,13 @@ func rob(nums []int) int {
 	}
 	return dp[len(nums)-1]
 }
-func max(a int, b int) int {
-	if a > b {
-		return a
-	} else {
-		return b
-	}
-}
+
+// func max(a int, b int) int {
+// 	if a > b {
+// 		return a
+// 	} else {
+// 		return b
+// 	}
+// }
 
 // @lc code=end
