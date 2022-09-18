@@ -1,5 +1,7 @@
 package Solutions
 
+import "math"
+
 func minSteps(n int) int {
 	num := 1
 	mem := 1

@@ -1,4 +1,6 @@
-package Solutions 
+package Solutions
+
+import "sort"
 
 func pairSums(nums []int, target int) [][]int {
 	sort.Ints(nums)
