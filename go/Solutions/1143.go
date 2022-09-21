@@ -1,6 +1,6 @@
 package Solutions
 
-func max(a, b int) int {
+func __max(a, b int) int {
 	if a < b {
 		return b
 	}

@@ -1,10 +1,12 @@
 package Solutions
 
+import "sort"
+
 func isPossibleDivide(nums []int, k int) bool {
 	if len(nums)%k != 0 {
 		return false
 	}
-   
+
 	sort.Ints(nums)
 	var buckets = make([][]int, 1)
 	buckets[0] = make([]int, 0, k)

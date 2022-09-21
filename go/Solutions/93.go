@@ -1,5 +1,10 @@
 package Solutions
 
+import (
+	"strconv"
+	"strings"
+)
+
 func restoreIpAddresses(s string) []string {
 	var ans = make([]string, 0, 8)
 	track := [4]string{}
@@ -20,10 +25,10 @@ func backTrack(s string, index int, dotNum int, track [4]string, ans *[]string) 
 	}
 	if s[index] == '0' {
 		track[3-dotNum] = "0"
-		if index+1<len(s){
+		if index+1 < len(s) {
 			backTrack(s, index+1, dotNum-1, track, ans)
 		}
-		
+
 		return
 	}
 	for i := index; i < len(s)-1; i++ {

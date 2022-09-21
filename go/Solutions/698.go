@@ -1,5 +1,6 @@
 package Solutions
 
+import "sort"
 
 func canPartitionKSubsets(nums []int, k int) bool {
 	var sum = 0
@@ -15,11 +16,11 @@ func canPartitionKSubsets(nums []int, k int) bool {
 		nums[left], nums[right] = nums[right], nums[left]
 	}
 	var buckets = make([]int, k)
-	return backTrack(nums, 0, buckets, avg)
+	return backTrack_(nums, 0, buckets, avg)
 
 }
 
-func backTrack(nums []int, index int, buckets []int, target int) bool {
+func backTrack_(nums []int, index int, buckets []int, target int) bool {
 	if index == len(nums) {
 		return true
 	}
@@ -30,7 +31,7 @@ func backTrack(nums []int, index int, buckets []int, target int) bool {
 		}
 		if nums[index]+buckets[i] <= target {
 			buckets[i] += nums[index]
-			if backTrack(nums, index+1, buckets, target) {
+			if backTrack_(nums, index+1, buckets, target) {
 				return true
 			}
 			buckets[i] -= nums[index]

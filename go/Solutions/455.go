@@ -1,5 +1,6 @@
-package Solutions 
+package Solutions
 
+import "sort"
 
 func findContentChildren(g []int, s []int) int {
 	sort.Ints(g)
