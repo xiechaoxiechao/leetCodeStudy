@@ -1,3 +1,7 @@
+package Solutions
+
+import "container/heap"
+
 type server struct {
 	weight int
 	index  int

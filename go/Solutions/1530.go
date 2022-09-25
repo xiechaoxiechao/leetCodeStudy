@@ -1,6 +1,6 @@
 package Solutions
 
-func countPairs(root *TreeNode, distance int) int {
+func countPairs_(root *TreeNode, distance int) int {
 	var ans = 0
 	dfs_countPa(root, &ans, distance)
 	return ans
