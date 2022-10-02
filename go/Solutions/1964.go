@@ -1,11 +1,12 @@
 package Solutions
 
+import "strings"
 
 func reformatNumber(number string) string {
 	number = strings.ReplaceAll(strings.ReplaceAll(number, " ", ""), "-", "")
 	sb := strings.Builder{}
 	length := len(number)
-	for i := 0; i < length;  {
+	for i := 0; i < length; {
 		if length-i > 4 {
 
 			sb.WriteByte(number[i])
@@ -14,7 +15,7 @@ func reformatNumber(number string) string {
 			i++
 			sb.WriteByte(number[i])
 			i++
-            sb.WriteByte('-')
+			sb.WriteByte('-')
 			continue
 		}
 		if length-i == 4 {
