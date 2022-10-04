@@ -7,7 +7,7 @@ package Solutions
  */
 
 // @lc code=start
-func exist(board [][]byte, word string) bool {
+func exist_(board [][]byte, word string) bool {
 	var ana func(r, c int) bool
 	status := make([]int, len(board))
 	index := 0
