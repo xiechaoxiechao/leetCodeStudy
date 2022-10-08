@@ -8,15 +8,15 @@
 
 package Solutions
 
-type Node struct {
+type Node_ struct {
 	Val      int
-	Children []*Node
+	Children []*Node_
 }
 
-func preorder(root *Node) []int {
+func preorder(root *Node_) []int {
 	var res = make([]int, 1000)
-	var f func(node *Node)
-	f = func(node *Node) {
+	var f func(node *Node_)
+	f = func(node *Node_) {
 		res = append(res, node.Val)
 		for i := 0; i < len(node.Children); i++ {
 			f(node.Children[i])

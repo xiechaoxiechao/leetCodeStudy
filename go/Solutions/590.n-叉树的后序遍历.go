@@ -14,13 +14,13 @@
  */
 package Solutions
 
-func postorder(root *Node) []int {
-	var f func(node *Node)
+func postorder(root *Node_) []int {
+	var f func(node *Node_)
 	if root == nil {
 		return []int{}
 	}
 	var ans = make([]int, 0, 10000)
-	f = func(node *Node) {
+	f = func(node *Node_) {
 		for i := 0; i < len(node.Children); i++ {
 			f(node.Children[i])
 		}
