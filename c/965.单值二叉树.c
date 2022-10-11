@@ -6,29 +6,27 @@
 
 // @lc code=start
 
- 
 struct TreeNode {
-    int val;
-    struct TreeNode *left;
-    struct TreeNode *right;
+  int val;
+  struct TreeNode *left;
+  struct TreeNode *right;
 };
 
-#include<stdbool.h>
-#include<stdio.h>
+#include <stdbool.h>
+#include <stdio.h>
 
-bool isUnivalTree(struct TreeNode* root){
-    if (root->left!=NULL){
-        if(root->left->val!=root->val||!isUnivalTree(root->left)){
-            return false;
-        }
+bool isUnivalTree(struct TreeNode *root) {
+  if (root->left != NULL) {
+    if (root->left->val != root->val || !isUnivalTree(root->left)) {
+      return false;
     }
-    if (root->right!=NULL){
-        if(root->right->val!=root->val||!isUnivalTree(root->right)){
-            return false;
-        }
+  }
+  if (root->right != NULL) {
+    if (root->right->val != root->val || !isUnivalTree(root->right)) {
+      return false;
     }
-    return true;
+  }
+  return true;
 }
 
 // @lc code=end
-
