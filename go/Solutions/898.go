@@ -1,6 +1,5 @@
 package Solutions
 
-
 func subarrayBitwiseORs(arr []int) int {
 	var mp1 = make(map[int]struct{})
 	mp1[arr[0]] = struct{}{}
@@ -10,13 +9,13 @@ func subarrayBitwiseORs(arr []int) int {
 		dpT := make(map[int]struct{})
 		dpT[arr[i]] = struct{}{}
 		mp[arr[i]] = struct{}{}
-		for k, _ := range mp1 {
+		for k := range mp1 {
 			t := k | arr[i]
 			mp[t] = struct{}{}
 			dpT[t] = struct{}{}
 		}
 		mp1 = dpT
-     
+
 	}
 	return len(mp)
 }

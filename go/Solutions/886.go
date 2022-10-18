@@ -1,18 +1,18 @@
 package Solutions
 
-type Uf struct {
+type Uf_ struct {
 	master []int
 	rank   []int
 }
 
-func (u *Uf) find(i int) int {
+func (u *Uf_) find(i int) int {
 	if u.master[i] != i {
 		u.master[i] = u.find(u.master[i])
 	}
 	return u.master[i]
 }
 
-func (u *Uf) Union(i, j int) {
+func (u *Uf_) Union(i, j int) {
 	x, y := u.find(i), u.find(j)
 	if x == y {
 		return
@@ -27,15 +27,15 @@ func (u *Uf) Union(i, j int) {
 	}
 }
 
-func (u *Uf) isConnected(i, j int) bool {
+func (u *Uf_) isConnected(i, j int) bool {
 	x, y := u.find(i), u.find(j)
 	return x == y
 }
 func possibleBipartition(n int, dislikes [][]int) bool {
-    if len(dislikes)==0{
-        return true
-    }
-	uf := &Uf{}
+	if len(dislikes) == 0 {
+		return true
+	}
+	uf := &Uf_{}
 	uf.master = make([]int, n)
 	for i := 0; i < n; i++ {
 		uf.master[i] = i
@@ -51,7 +51,7 @@ func possibleBipartition(n int, dislikes [][]int) bool {
 		for j := 0; j < len(con[i]); j++ {
 			uf.Union(con[i][0], con[i][j])
 		}
-		if len(con[i])>0&&uf.isConnected(con[i][0], i) {
+		if len(con[i]) > 0 && uf.isConnected(con[i][0], i) {
 			return false
 		}
 	}
