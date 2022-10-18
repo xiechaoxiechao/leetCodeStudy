@@ -9,6 +9,7 @@ import "strings"
 
 // @lc code=start
 func toLowerCase(s string) string {
+
 	return strings.ToLower(s)
 }
 
