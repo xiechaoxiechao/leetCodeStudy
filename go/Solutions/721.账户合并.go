@@ -28,14 +28,6 @@ func (u _uf) union(s1, s2 string) {
 	if x == y {
 		return
 	}
-	// if u.rank[x] < u.rank[y] {
-	// 	u.parent[x] = y
-	// } else if u.rank[x] == u.rank[y] {
-	// 	u.parent[y] = x
-	// 	u.rank[x]++
-	// } else {
-	// 	u.parent[y] = x
-	// }
 	u.parent[y] = x
 
 }
