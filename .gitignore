@@ -8,3 +8,4 @@ Program.cs
 go/Solutions/Solutions_test.go
 c/build/**
 cSharp/.idea/**
+rust_solutions/target/**
